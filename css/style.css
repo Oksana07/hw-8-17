@@ -1,3 +1,9 @@
+a{
+text-decoration: none;
+font-style: normal;
+}
+
+/* ЗАвдання 1 */
 .text-box h3:first-of-type {
     color: pink
 }
@@ -6,7 +12,7 @@
     color: grey
 }
 
-.text-box h3:last-of-type{
+.text-box p:last-of-type{
 color: red
 }
 
@@ -14,7 +20,53 @@ color: red
     color: #07f124
 }
 
-.yellow{
+.text-box .yellow:last-of-type{
 color: yellow
 }
+
+/* Завдання 2 */
+/* псевдокласи: стану */
+.monday-title:active{
+    color: #07f124;
+    cursor: pointer;
+}
+
+.tuesday-title:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.wednesday-title:focus{
+color: purple;
+}
+
+.thursday-title:visited{
+  color: red;  
+}
+
+.friday-title:link{
+    color: yellow;
+}
+
+/* Структурні псевдокласи: */
+.timetable >:first-child{
+    color: yellow;
+}
+
+.timetable >:last-child{
+    color: #07f124;
+}
+
+.thursday >:nth-child(odd){
+    color: purple;
+}
+
+.timetable >:nth-child(even){
+    color: red;
+}
+
+.timetable >:nth-child(3){
+    color: aqua;
+}
+
 
